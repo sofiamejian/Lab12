@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Manager</h1>
+  </header>
+  <main>
+    <section class="form-section">
+      <form id="contact-form">
+        <input type="hidden" id="contact-id">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Sofia Mejia" required>
+        
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" placeholder="312 445 5994" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Sofiax@example.com">
+        
+        <label for="address">Address:</label>
+        <input type="text" id="address" placeholder="Calle4n#45">
+        
+        <button type="submit">Save Contact</button>
+      </form>
+    </section>
+    
+    <section class="contacts-section">
+      <h2>Your Contacts</h2>
+      <div id="contacts-list"></div>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
